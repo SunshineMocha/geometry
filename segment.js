@@ -8,14 +8,13 @@ class Segment{ // dichiarazione classe segmento
         const pointB = new Point(xB, yB);
         return new Segment(pointA, pointB);
     }
-
-    get Lenght(params){ // hypotenusa/segment lenght = √(deltaX²+deltaY²)
+    get length(){ // hypotenusa/segment lenght = √(deltaX²+deltaY²)
         const deltaX = this.pointA.x - this.pointB.x;
         const deltaY = this.pointA.y - this.pointB.y;
         const squaredX = deltaX**2;
         const squaredY = deltaY**2;
         const squareSum = squaredX + squaredY;
-        const hypotenusa = Math.sqrt(squareSum);
-        return hypotenusa;
+        const length = Math.sqrt(squareSum);
+        return length;
     }
 }
