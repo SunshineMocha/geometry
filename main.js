@@ -17,5 +17,6 @@
 
 /*  COMPITI  */
 
-const triangle1 = Triangle.fromAngleToAngle(2, 2, 2, 5, 5, 2);
+const triangle1 = Triangle.fromAngleToAngle(0, 0, 4, 0, 0, 3);
+console.log(triangle1.perimeter);
 console.log(triangle1.area);
